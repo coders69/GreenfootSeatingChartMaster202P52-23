@@ -185,6 +185,10 @@ public class Classroom extends World
         JohnnyLei johnnylei = new JohnnyLei();
         addObject(johnnylei,9,4);
         johnnylei.assignSeat();
+        
+        SeanLee seanlee = new SeanLee();
+        addObject(seanlee,8,4);
+        seanlee.assignSeat();
     }
     
     public List<Student> getAllStudents(){
