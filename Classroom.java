@@ -175,14 +175,16 @@ public class Classroom extends World
         lukezeng.assignSeat();
         
         HitarthShukla hitarthshukla = new HitarthShukla();
-        addObject(hitarthshukla,6,9);
+        addObject(hitarthshukla,5,10);
         hitarthshukla.assignSeat();
         
         AndresSilvera andressilvera = new AndresSilvera();
         addObject(andressilvera,5,9);
         andressilvera.assignSeat();
         
-        
+        JohnnyLei johnnylei = new JohnnyLei();
+        addObject(johnnylei,9,4);
+        johnnylei.assignSeat();
     }
     
     public List<Student> getAllStudents(){
