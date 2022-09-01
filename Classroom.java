@@ -182,6 +182,10 @@ public class Classroom extends World
         addObject(andressilvera,5,9);
         andressilvera.assignSeat();
         
+        SeanLee seanlee = new SeanLee();
+        addObject(seanlee,8,4);
+        seanlee.assignSeat();
+        
         
     }
     
