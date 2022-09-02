@@ -193,7 +193,7 @@ public class Classroom extends World
         SeanLee seanlee = new SeanLee();
         addObject(seanlee,8,4);
         seanlee.assignSeat();
->>>>>>> 881c1444198176d7fa6641996a8ed7b53f9ddb85
+
     }
     
     public List<Student> getAllStudents(){
