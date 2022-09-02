@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
+import java.lang.Math;
 /**
  * Write a description of class Student here.
  * 
@@ -54,7 +55,7 @@ public abstract class Student extends Actor
     }
     
     public void sayName(String myNameFile){
-        Greenfoot.playSound(myNameFile);
+        // Greenfoot.playSound(myNameFile);
     }
     
     public void returnToSeat(){
@@ -69,5 +70,76 @@ public abstract class Student extends Actor
         mySeatX=getX();
         mySeatY=getY();
     }
- 
+    
+    public void TableGroup1Method(){
+        /** Table Group 1: Seth, Miranda, Abhi, and Ankita **/
+        Greenfoot.delay(10);
+        for (int i=1;i<=30;i++){
+            setRotation((int)(12*i));
+            Greenfoot.delay(10);
+        }
+        
+    }
+    
+    /**
+     * Makes the person spin in a perfect circle around a center point
+     * Using sin and cosine with customisable variables but is also overloaded
+     * with default parameters in case someone wants to edit it
+     * Made by: Anikait Srivastav, Luke Zeng, Saachi T
+     */
+    public void circleMovement(int centerX ,int centerY ,int radius){
+        for(float deg = 0; deg < 360; deg += 5.0){
+            double cosVar = Math.cos((deg/180)*Math.PI);
+            double sinVar = Math.sin((deg/180)*Math.PI);
+            setLocation((int)(centerX + (cosVar*radius)),(int)(centerY + (sinVar*radius)));
+            Greenfoot.delay(1);
+        }
+    }
+    public void circleMovement(){
+        int centerX = 6;
+        int centerY = 7;
+        int radius = 6;
+        for(float deg = 0; deg < 360; deg += 5.0){
+            double cosVar = Math.cos((deg/180)*Math.PI);
+            double sinVar = Math.sin((deg/180)*Math.PI);
+            setLocation((int)(centerX + (cosVar*radius)),(int)(centerY + (sinVar*radius)));
+            Greenfoot.delay(1);
+        }
+    }
+    
+    /**
+     * First spins around the border
+     * Then transports itself to top right corner and goes down vertically
+     * After it goes down vertically it goes back to the top one line to the left
+     * And goes back down, repeats until it reaches the top right of the screen
+     * Made by: Hitarth Shukla, Andres Silvera, Alexander Suen, Krithik Tamilvanan
+     */
+    public void tableMove(){
+        GreenfootImage myImage = getImage();
+        for (int i = 0; i < 2; i++){
+            int rotationAngle = 0;
+            while (rotationAngle < 360) {
+                setRotation(rotationAngle);
+                move(1);
+                Greenfoot.delay(2);
+                rotationAngle = rotationAngle + 5;
+            }
+            setRotation(360);
+        }
+        Greenfoot.delay(10);
+        // move right
+        for (int i=0;i<=9;i++){
+            turn(45);
+            setLocation(i,i);
+            Greenfoot.delay(1);
+        }
+        // move back
+        for (int i=14;i>=0;i--){
+            for (int j=0; j<14; j++){
+                setLocation(i, j);
+                Greenfoot.delay(1);
+            }
+        }  
+        setRotation(0);
+    }
 }
