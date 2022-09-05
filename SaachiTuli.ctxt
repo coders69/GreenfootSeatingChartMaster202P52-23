@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=SaachiTuli
+comment0.text=\n\ Saachi\ Tuli's\ seating\ location\ in\ AP\ CSA\ period\ 7,\ creative\ animation\ and\n\ sound\n\ \n\ @author\ Saachi\ Tuli\n\ @version\ 9/5/2022\n
+comment1.params=f\ l\ r\ s
+comment1.target=SaachiTuli(java.lang.String,\ java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=SaachiTuli()
+comment2.text=\n\ Default\ constructor\n
+comment3.params=
+comment3.target=void\ act()
+comment3.text=\n\ Saachi\ Tuli's\ method\ after\ click.\ Sitting\ profile\ stands\ up\ and\ travels\ \n\ the\ classroom\ while\ sharing\ more\ about\ me\!\n
+comment4.params=
+comment4.target=void\ circleClass()
+comment4.text=\n\ This\ is\ a\ local\ method\ specific\ to\ the\ SaachiTuli\ class\ used\ to\ animate\n\ the\ character\ once\ the\ image\ is\ clicked\ on\ to\ travel\ the\ classroom.\n
+comment5.params=
+comment5.target=void\ getName()
+comment5.text=\n\ Prints\ the\ first\ and\ last\ name\ to\ the\ console\n
+comment6.params=s
+comment6.target=void\ myHobby(java.lang.String)
+comment6.text=\n\ Prints\ my\ hobby\ onto\ the\ console\n
+numComments=7
