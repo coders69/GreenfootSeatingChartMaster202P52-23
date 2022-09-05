@@ -178,6 +178,10 @@ public class Classroom extends World
         addObject(lukezeng,9,10);
         lukezeng.assignSeat();
         
+        SathvikaNadipalli sathvikanadipalli = new SathvikaNadipalli();
+        addObject(sathvikanadipalli,5,7);
+        sathvikanadipalli.assignSeat();
+        
         HitarthShukla hitarthshukla = new HitarthShukla();
         addObject(hitarthshukla,5,10);
         hitarthshukla.assignSeat();
