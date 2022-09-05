@@ -197,10 +197,16 @@ public class Classroom extends World
         SeanLee seanlee = new SeanLee();
         addObject(seanlee,8,4);
         seanlee.assignSeat();
+
+        SreenidhiSreenivasan sreenidhisreenivasan = new SreenidhiSreenivasan();
+        addObject(sreenidhisreenivasan,9,9);
+        sreenidhisreenivasan.assignSeat();
+
         
         SaachiTuli saachituli = new SaachiTuli();
         addObject(saachituli,8,10);
         saachituli.assignSeat();
+
 
     }
     
