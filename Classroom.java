@@ -207,6 +207,12 @@ public class Classroom extends World
         addObject(saachituli,8,10);
         saachituli.assignSeat();
 
+        
+        PranaviGollanapalli pranavigollanapalli = new PranaviGollanapalli();
+        addObject(pranavigollanapalli,8,3);
+        pranavigollanapalli.assignSeat();
+
+
 
     }
     
