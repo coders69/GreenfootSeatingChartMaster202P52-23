@@ -135,7 +135,6 @@ public class Classroom extends World
         studentdesk19.setDeskGroup(8);
         studentdesk18.setDeskGroup(8);
         studentdesk20.setDeskGroup(8);
-        
     }
    
     
@@ -147,46 +146,16 @@ public class Classroom extends World
     private void prepare()
     {
         createDeskLayout();
- // Each student needs to create their specific instance following the KilgoreTrout example.
- // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
- // and then clicking on the inspect text
+     // Each student needs to create their specific instance following the KilgoreTrout example.
+     // Your current seatX and seatY can be found by right clicking on the corresponding seat in the Classrom.
+     // and then clicking on the inspect text
         KilgoreTrout kilgoretrout = new KilgoreTrout();
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
         
-        RyanLin ryanlin = new RyanLin();
-        addObject(ryanlin,2,6);
-        ryanlin.assignSeat();
-        
-        AnikaitSrivastav anikaitsrivastav = new AnikaitSrivastav();
-        addObject(anikaitsrivastav,8,9);
-        anikaitsrivastav.assignSeat(); 
-        
-        AlexanderSuen alexandersuen = new AlexanderSuen();
-        addObject(alexandersuen,6,10);
-        alexandersuen.assignSeat();
-        
-        KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
-        addObject(krithiktamilvanan,5,10);
-        krithiktamilvanan.assignSeat();
-        
-        LukeZeng lukezeng = new LukeZeng();
-        addObject(lukezeng,9,10);
-        lukezeng.assignSeat();
-        
-        HitarthShukla hitarthshukla = new HitarthShukla();
-        addObject(hitarthshukla,6,9);
-        hitarthshukla.assignSeat();
-        
-        AndresSilvera andressilvera = new AndresSilvera();
-        addObject(andressilvera,5,9);
-        andressilvera.assignSeat();
-        
-        SeanLee seanlee = new SeanLee();
-        addObject(seanlee,8,4);
-        seanlee.assignSeat();
-        
-        
+        PranaviGollanapalli pranavigollanapalli = new PranaviGollanapalli();
+        addObject(pranavigollanapalli,8,3);
+        pranavigollanapalli.assignSeat();
     }
     
     public List<Student> getAllStudents(){
