@@ -57,6 +57,7 @@ public class LukeZeng extends Student
          System.out.println(s);
     }
     public void circleClass(){
+        circleMovement();
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
