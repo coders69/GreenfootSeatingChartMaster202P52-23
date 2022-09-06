@@ -63,7 +63,7 @@ public class PranaviGollanapalli extends Student implements SpecialInterestOrHob
                 setImage(standingFile);
                 System.out.println(""); // Print a blank line to create space between any student output.
                 getName();
-                sayName(soundFile);
+                Greenfoot.playSound("pranavigollanapalli.wav");
             
                 myHobby("I like to visit museums!");
             // Create a "special method for your class and put the call here.  You can twirl your image, resize it, move it around, change transparancy, or a 
