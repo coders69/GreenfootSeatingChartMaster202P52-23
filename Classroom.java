@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
+
 //import java.util.List;
 //import java.util.Arrays;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
@@ -135,6 +136,7 @@ public class Classroom extends World
         studentdesk19.setDeskGroup(8);
         studentdesk18.setDeskGroup(8);
         studentdesk20.setDeskGroup(8);
+        
     }
    
     
@@ -153,6 +155,74 @@ public class Classroom extends World
         addObject(kilgoretrout,2,3);
         kilgoretrout.assignSeat();
   
+        TheoLeung theoleung = new TheoLeung();
+        addObject(theoleung,3,6);
+        theoleung.assignSeat();
+        
+        RyanLin ryanlin = new RyanLin();
+        addObject(ryanlin,2,6);
+        ryanlin.assignSeat();
+        
+        AnikaitSrivastav anikaitsrivastav = new AnikaitSrivastav();
+        addObject(anikaitsrivastav,8,9);
+        anikaitsrivastav.assignSeat(); 
+        
+        AlexanderSuen alexandersuen = new AlexanderSuen();
+        addObject(alexandersuen,6,10);
+        alexandersuen.assignSeat();
+        
+        KrithikTamilvanan krithiktamilvanan = new KrithikTamilvanan();
+        addObject(krithiktamilvanan,5,10);
+        krithiktamilvanan.assignSeat();
+        
+        LukeZeng lukezeng = new LukeZeng();
+        addObject(lukezeng,9,10);
+        lukezeng.assignSeat();
+        
+        SathvikaNadipalli sathvikanadipalli = new SathvikaNadipalli();
+        addObject(sathvikanadipalli,5,7);
+        sathvikanadipalli.assignSeat();
+        
+        HitarthShukla hitarthshukla = new HitarthShukla();
+        addObject(hitarthshukla,5,10);
+        hitarthshukla.assignSeat();
+        
+        AndresSilvera andressilvera = new AndresSilvera();
+        addObject(andressilvera,5,9);
+        andressilvera.assignSeat();
+        
+        JohnnyLei johnnylei = new JohnnyLei();
+        addObject(johnnylei,9,4);
+        johnnylei.assignSeat();
+        
+        SeanLee seanlee = new SeanLee();
+        addObject(seanlee,8,4);
+        seanlee.assignSeat();
+
+        SreenidhiSreenivasan sreenidhisreenivasan = new SreenidhiSreenivasan();
+        addObject(sreenidhisreenivasan,9,9);
+        sreenidhisreenivasan.assignSeat();
+
+        
+        SaachiTuli saachituli = new SaachiTuli();
+        addObject(saachituli,8,10);
+        saachituli.assignSeat();
+
+        
+        PranaviGollanapalli pranavigollanapalli = new PranaviGollanapalli();
+        addObject(pranavigollanapalli,8,3);
+        pranavigollanapalli.assignSeat();
+        
+        //** start Mayank
+        
+        MayankKumar mayankkumar = new MayankKumar();
+        addObject(mayankkumar, 5, 4);
+        mayankkumar.assignSeat();
+        
+        //** end Mayank
+
+
+
     }
     
     public List<Student> getAllStudents(){
@@ -196,32 +266,32 @@ public class Classroom extends World
     
 
    public  void appendFile(String fname, String s){
-   {	
+   {    
       try{
-    	 
+         
         //Specify the file name and path here
-    	File file =new File(fname);
+        File file =new File(fname);
 
-    	/* This logic is to create the file if the
-    	 * file is not already present
-    	 */
-    	if(!file.exists()){
-    	   file.createNewFile();
-    	}
+        /* This logic is to create the file if the
+         * file is not already present
+         */
+        if(!file.exists()){
+           file.createNewFile();
+        }
 
-    	//Here true is to append the content to file
-    	FileWriter fw = new FileWriter(file,true);
-    	//BufferedWriter writer give better performance
-    	BufferedWriter bw = new BufferedWriter(fw);
-    	bw.write(s);
-    	//Closing BufferedWriter Stream
-    	bw.close();
+        //Here true is to append the content to file
+        FileWriter fw = new FileWriter(file,true);
+        //BufferedWriter writer give better performance
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(s);
+        //Closing BufferedWriter Stream
+        bw.close();
 
-	System.out.println("Data successfully appended at the end of file");
+    System.out.println("Data successfully appended at the end of file");
 
       }catch(IOException ioe){
          System.out.println("Exception occurred:");
-    	 ioe.printStackTrace();
+         ioe.printStackTrace();
        }
    }
 }
