@@ -142,4 +142,53 @@ public abstract class Student extends Actor
         }  
         setRotation(0);
     }
+    
+    // *** Start Mayank for Animation ***
+        public void rotationUp(){
+        for (int i =2; i<= 3; i++){
+            for (int j =1; j<= 10; j++){
+                setRotation((36*j));
+            //int myNewHeight = myImage.getHeight()*i;
+            //int myNewWidth = myImage.getWidth()*i;
+            
+                Greenfoot.delay(2);
+            
+            }
+            GreenfootImage myImage = getImage();
+            myImage.scale((myImage.getWidth()*i), (myImage.getHeight()*i));
+        }
+    }
+    
+    public void rotationDown(){
+        for (int i =2; i<= 3; i++){
+            for (int j =1; j<= 10; j++){
+                setRotation((36*j));
+            //int myNewHeight = myImage.getHeight()*i;
+            //int myNewWidth = myImage.getWidth()*i;
+            
+                Greenfoot.delay(2);
+            
+            }
+            GreenfootImage myImage = getImage();
+            myImage.scale((myImage.getWidth()/i), (myImage.getHeight()/i));
+        }
+    }
+    
+    
+    public void walkback2seat(){
+        //walk left
+        /**/
+        
+        //walk up
+        for (int i=7;i>=4;i--){
+            setLocation(6,i);
+            Greenfoot.delay(10);
+        } 
+        
+        for (int i=6;i>=5;i--){
+            setLocation(i,4);
+            Greenfoot.delay(10);
+        } 
+    }
+    // ** End Mayank ****
 }

@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.FileNotFoundException;
+
 //import java.util.List;
 //import java.util.Arrays;
  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
@@ -211,6 +212,14 @@ public class Classroom extends World
         PranaviGollanapalli pranavigollanapalli = new PranaviGollanapalli();
         addObject(pranavigollanapalli,8,3);
         pranavigollanapalli.assignSeat();
+        
+        //** start Mayank
+        
+        MayankKumar mayankkumar = new MayankKumar();
+        addObject(mayankkumar, 5, 4);
+        mayankkumar.assignSeat();
+        
+        //** end Mayank
 
 
 
